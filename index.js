@@ -1,4 +1,4 @@
-import {Application, Router} from "simurgh"
+import {Application, Router} from "./node_modules/simurgh/core.js"
 
 let myApp=new Application();
 
