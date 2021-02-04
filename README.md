@@ -1,2 +1,1 @@
-# blankApp
-# blankApp
+# Simurgh blankApp
