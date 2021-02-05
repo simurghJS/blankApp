@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "simurgh":"0.9.33-beta.0"
+    "simurgh":"0.9.35-beta.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.8",
