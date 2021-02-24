@@ -1,14 +1,11 @@
-import {Application, Router} from "./node_modules/simurgh/core.js"
+import * as simurgh from 'simurgh/app/application';
+import { CreateStackNavigation } from 'simurgh/app/navigation';
 
-let myApp=new Application();
+let myApp = new simurgh.Application();
 
-myApp.registerRoutes(()=>{
-
-    let router=new Router();
-    router.add('',()=>{
-        return <p> hello world! </p>
-    });
-    
-});
+let mystack = new CreateStackNavigation();
+mystack.add('/', () => { return (<h1>hello world</h1>); });
+mystack.add('/test', () => { return (<h1>hello world test</h1>); });
+myApp.navigation = mystack;
 
 myApp.build();
